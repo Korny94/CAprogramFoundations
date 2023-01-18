@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "julius";
+    src: url(/assets/Julius_Sans_One/JuliusSansOne-Regular.ttf);
+}
+
+body {
+    font-family: "julius";
+    font-weight: 900;
+    text-align: center;
+}
+
+#golfbag {
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+#golfbag:hover {
+    transform: scale(1.1);
+}
+
+#driver:hover,
+#wood:hover,
+#hybrid:hover,
+#irons:hover,
+#wedge:hover,
+#putter:hover {
+    transform: scale(.6);
+}
+
+#listWood,
+#listWedges {
+    padding-left: 2rem;
+}
+
+#listHybrid {
+    padding-left: 3rem;
+}
+
+#listIrons {
+    padding-left: 3.7rem;
+}
+
+ul {
+}
+
+li {
+    list-style: none;
+    transition-duration: 300ms;
+    margin: 1.5rem;
+}
+
+li:hover {
+    transform: scale(1.3);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#driver {
+    transform: scale(.5);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-top: -9.5rem;
+}
+
+#wood {
+    transform: scale(.3);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-top: -17.4rem;
+    margin-left: -7rem;
+    display: none;
+}
+
+#hybrid {
+    transform: scale(.3);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-top: -18.5rem;
+    margin-left: -2.5rem;
+    display: none;
+}
+
+#irons {
+    transform: scale(.18);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-left: -16rem;
+    margin-top: -27rem;
+    display: none;
+}
+
+#wedge {
+    transform: scale(.28);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-left: -12rem;
+    margin-top: -22rem;
+    display: none;
+}
+
+#putter {
+    transform: scale(.13);
+    transition-duration: 300ms;
+    position: absolute;
+    margin-left: -28rem;
+    margin-top: -38rem;
+    display: none;
+}
+
+#calculatePrice {
+    position: absolute;
+    right: 2rem;
+}
+
+#clubsPictures {
+    
+}
