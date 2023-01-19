@@ -44,7 +44,98 @@ let golfbag = {
 
 const listDriver = document.getElementById("listDriver");
 
-listDriver.style.color = "blue"
+const listWood = document.getElementById("listWood");
+
+const listHybrid = document.getElementById("listHybrid");
+
+const listIrons = document.getElementById("listIrons");
+
+const listWedges = document.getElementById("listWedges");
+
+const listPutter = document.getElementById("listPutter");
+
+let imgDriver = document.getElementById("driver");
+
+let imgWood = document.getElementById("wood");
+
+let imgHybrid = document.getElementById("hybrid");
+
+let imgIrons = document.getElementById("irons");
+
+let imgWedges = document.getElementById("wedges");
+
+let imgPutter = document.getElementById("putter");
+
+let imgDefault = document.getElementById("defaultClub");
+
+let clubModel = document.querySelector("h3");
+
+
+listDriver.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.driver;
+    imgDriver.style.display = "block";
+    imgWood.style.display = "none";
+    imgHybrid.style.display = "none";
+    imgIrons.style.display = "none";
+    imgWedges.style.display = "none";
+    imgPutter.style.display = "none";
+    imgDefault.style.display = "none";
+}
+
+listWood.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.wood;
+    imgDriver.style.display = "none";
+    imgWood.style.display = "block";
+    imgHybrid.style.display = "none";
+    imgIrons.style.display = "none";
+    imgWedges.style.display = "none";
+    imgPutter.style.display = "none";
+    imgDefault.style.display = "none";
+}
+
+listHybrid.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.hybrid;
+    imgDriver.style.display = "none";
+    imgWood.style.display = "none";
+    imgHybrid.style.display = "block";
+    imgIrons.style.display = "none";
+    imgWedges.style.display = "none";
+    imgPutter.style.display = "none";
+    imgDefault.style.display = "none";
+}
+
+listIrons.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.irons;
+    imgDriver.style.display = "none";
+    imgWood.style.display = "none";
+    imgHybrid.style.display = "none";
+    imgIrons.style.display = "block";
+    imgWedges.style.display = "none";
+    imgPutter.style.display = "none";
+    imgDefault.style.display = "none";
+}
+
+listWedges.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.wedges;
+    imgDriver.style.display = "none";
+    imgWood.style.display = "none";
+    imgHybrid.style.display = "none";
+    imgIrons.style.display = "none";
+    imgWedges.style.display = "block";
+    imgPutter.style.display = "none";
+    imgDefault.style.display = "none";
+}
+
+listPutter.onmouseover = function() {
+    clubModel.innerHTML = golfbag.model.putter;
+    imgDriver.style.display = "none";
+    imgWood.style.display = "none";
+    imgHybrid.style.display = "none";
+    imgIrons.style.display = "none";
+    imgWedges.style.display = "none";
+    imgPutter.style.display = "block";
+    imgDefault.style.display = "none";
+}
 
 
 

@@ -9,6 +9,10 @@ body {
     text-align: center;
 }
 
+h1 {
+    text-shadow: 0px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
 input {
     cursor: pointer;
 }
@@ -20,26 +24,37 @@ input {
     margin-left: -3rem;
 }
 
+#defaultClub {
+    position: absolute;
+    transform: scale(.15);
+    margin-top: -21rem;
+    margin-left: -28rem;
+    opacity: .1;
+}
+
 #golfbag:hover {
     transform: scale(1.1);
 }
 
 #driver:hover {
-    transform: scale(.6);
+    transform: scale(.54);
 }
 
 #wood:hover,
-#hybrid:hover,
-#wedge:hover {
-    transform: scale(.35);
+#hybrid:hover {
+    transform: scale(.30);
+}
+
+#wedges:hover {
+    transform: scale(.28);
 }
 
 #irons:hover {
-    transform: scale(.22);
+    transform: scale(.20);
 }
 
 #putter:hover {
-    transform: scale(.17);
+    transform: scale(.14);
 }
 
 #listWood,
@@ -55,6 +70,13 @@ input {
     padding-left: 3.7rem;
 }
 
+h3 {
+    margin-top: -3rem;
+    margin-left: -4rem;
+    font-size: .8rem;
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
 ul {
     z-index: 1;
     margin-left: -10rem;
@@ -64,11 +86,13 @@ li {
     list-style: none;
     transition-duration: 300ms;
     margin: 1.5rem;
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
 li:hover {
     transform: scale(1.3);
     cursor:context-menu;
+    text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -83,58 +107,61 @@ section {
 
 h2 {
     font-size: 1.2rem;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 #driver {
-    transform: scale(.5);
+    transform: scale(.45);
     transition-duration: 300ms;
     position: absolute;
-    margin-top: -6.5rem;
-    margin-left: -10rem;
+    margin-top: -4.5rem;
+    margin-left: -7.5rem;
+    display: none;
 }
 
 #wood {
-    transform: scale(.3);
+    transform: scale(.25);
     transition-duration: 300ms;
     position: absolute;
-    margin-top: -14.4rem;
-    margin-left: -18rem;
+    margin-top: -12.5rem;
+    margin-left: -15.5rem;
     display: none;
 }
 
 #hybrid {
-    transform: scale(.3);
+    transform: scale(.25);
     transition-duration: 300ms;
     position: absolute;
-    margin-top: -15.5rem;
-    margin-left: -12.5rem;
+    margin-top: -13rem;
+    margin-left: -11rem;
     display: none;
+    z-index: 0;
 }
 
 #irons {
-    transform: scale(.18);
+    transform: scale(.16);
     transition-duration: 300ms;
     position: absolute;
-    margin-left: -26rem;
-    margin-top: -24rem;
+    margin-left: -24rem;
+    margin-top: -21.5rem;
     display: none;
 }
 
-#wedge {
-    transform: scale(.28);
+#wedges {
+    transform: scale(.24);
     transition-duration: 300ms;
     position: absolute;
-    margin-left: -23rem;
-    margin-top: -19rem;
+    margin-left: -15rem;
+    margin-top: -14rem;
     display: none;
 }
 
 #putter {
-    transform: scale(.13);
+    transform: scale(.12);
     transition-duration: 300ms;
     position: absolute;
-    margin-left: -39rem;
-    margin-top: -35rem;
+    margin-left: -36rem;
+    margin-top: -32.5rem;
     display: none;
 }
 
@@ -145,9 +172,10 @@ h2 {
 }
 
 #clubsPictures {
-    width: 100px;
+    width: 130px;
     height: 100px;
     margin-left: clamp(1px, 6rem, 10vw);
+    text-align: center;
 }
 
 #priceClubs * {
