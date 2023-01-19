@@ -11,7 +11,10 @@
 <body>
     <h1>Leonardo's Golfbag</h1>
     <section>
-        <img src="/images/golfbag.jpg" alt="image of a golfbag" id="golfbag">
+        <div id="divBag">
+            <h3 id="bagModel">Cobra Ultralight Cart Bag</h3>
+            <img src="/images/golfbag.jpg" alt="image of a golfbag" id="golfbag">
+        </div>
         <ul>
             <li id="listDriver">
                 Driver
@@ -33,7 +36,7 @@
             </li>
         </ul>
         <div id="clubsPictures">
-            <h3></h3>
+            <h3 id="clubModel"></h3>
             <img src="/images/irons.PNG" alt="image of an unrevealed golfclub" id="defaultClub">
             <img src="/images/putter.jpg" alt="image of a putter golfclub" id="putter">
             <img src="/images/wedges.jpg" alt="image of a wedge golfclub" id="wedges">
@@ -68,10 +71,10 @@
                 <br>
                 <br>
                 <label for="totalPrice">Total price:</label>
-                <b id="totalPrice"></b>
+                <b id="totalPrice">0</b>
                 <br> <br>
-                <button id="calculate">Calculate</button>
                 <button id="reset">Reset</button>
+                <button id="calculate">Calculate</button>
             </div>
         </div>
     </section>
