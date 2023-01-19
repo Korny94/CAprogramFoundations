@@ -41,7 +41,36 @@
             <img src="/images/wood.png" alt="image of a wood golfclub" id="wood">
         </div>
         <div id="calculatePrice">
-            Price Calculator
+            <h2>Price Calculator</h2>
+            <div id="priceClubs">
+                <label for="priceClubs">Bag</label>
+                <input type="checkbox" name="priceClubs" id="priceBag"  value="1500" onclick="bagChecked()">
+                <br>
+                <label for="priceClubs">Driver</label>
+                <input type="checkbox" name="priceClubs" id="priceDriver" value="5000" onclick="driverChecked()">
+                <br>
+                <label for="priceClubs">Wood</label>
+                <input type="checkbox" name="priceClubs" id="priceWood" value="3000" onclick="woodChecked()">
+                <br>
+                <label for="priceClubs">Hybrid</label>
+                <input type="checkbox" name="priceClubs" id="priceHybrid" value="2000" onclick="hybridChecked()">
+                <br>
+                <label for="priceClubs">Irons</label>
+                <input type="checkbox" name="priceClubs" id="priceIrons" value="15000" onclick="ironsChecked()">
+                <br>
+                <label for="priceClubs">Wedges</label>
+                <input type="checkbox" name="priceClubs" id="priceWedges" value="4500" onclick="wedgesChecked()">
+                <br>
+                <label for="priceClubs">Putter</label>
+                <input type="checkbox" name="priceClubs" id="pricePutter"  value="2000" onclick="putterChecked()">
+                <br>
+                <br>
+                <button id="calculate">Calculate</button>
+                <button id="reset">Reset</button>
+                <br>
+                <label for="totalPrice">Total price:</label>
+                <b id="totalPrice"></b>
+            </div>
         </div>
     </section>
 
